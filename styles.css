@@ -10,12 +10,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-header{
+.nav-bar{
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 90px;
-    background-color: aqua;
 }
 
 .logo{
@@ -27,8 +26,85 @@ header{
     margin-right: 20px;
 }
 .logo h1{
-    font-weight: 500;
+    font-weight: 400;
 }
 .logo span{
     font-weight: 800;
+}
+.nav-items a{
+    text-decoration: none;
+    color: gray;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+.banner{
+    background: url('./images/img/Layer 24.png') rgba(27, 29, 33, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    background-blend-mode: multiply;
+    position: relative;
+}
+.banner-text{
+    position: relative;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+.banner h2{
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+.banner h1{
+    font-size: 55px;
+}
+
+.btns{
+    position: absolute;
+    top: 70%;
+    transform: translateX(180%);
+    margin: 0;
+    user-select: none;
+}
+.order-btn{
+    padding: 15px 25px 15px 25px;
+    background-color: #4AA406;
+    border: #4AA406;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.contact-btn{
+    padding: 15px 25px 15px 25px;
+    border: 1px solid rgb(211, 193, 193);
+    background: transparent;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .2s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.contact-btn:before, .conatct-btn:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+.contact-btn:hover {
+	background-color: #4AA406;
+	transition-delay: .5s;
+}
+.contact-btn:hover:before {
+	transition-delay: 0s;
+}
+.contact-btn:hover:after {
+	background-color: #678f48;
+	transition-delay: .35s;
 }
