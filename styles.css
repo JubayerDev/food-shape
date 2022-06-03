@@ -42,6 +42,7 @@ body {
     background: url('./images/img/Layer 24.png') rgba(27, 29, 33, 0.5);
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 200px;
     height: 90vh;
     background-blend-mode: multiply;
     position: relative;
@@ -51,7 +52,7 @@ body {
     text-align: center;
     line-height: 60px;
     color: white;
-    top: 50%;
+    top: 30%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -67,7 +68,7 @@ body {
 
 .btns{
     position: absolute;
-    top: 70%;
+    top: 60%;
     transform: translateX(180%);
     margin: 0;
     user-select: none;
@@ -107,4 +108,42 @@ body {
 .contact-btn:hover:after {
 	background-color: #678f48;
 	transition-delay: .35s;
+}
+
+.foods{
+    display: flex;
+    position: absolute;
+    bottom: -150px;
+    left: 12%
+}
+.food{
+    /* border: 1px solid; */
+    margin-right: 50px;
+    background-color: white;
+    border-radius: 5px;
+    min-height: 260px;
+    width: 300px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.food img,h3,p{
+    margin: 20px 0 0 20px;
+}
+.food h3{
+    font-size: 23px;
+}
+.food a{
+    margin: 20px 0 0 0;
+    display: inline-block;
+    text-decoration: none;
+    color: #49A305;
+}
+.food svg{
+    width: 18px;
+    margin: 20px 0 0 20px;
+    color: #49A305;
+}
+.desc{
+    /* margin: 20px 0 0 20px; */
+    display: flex;
+    align-items: center;
 }
